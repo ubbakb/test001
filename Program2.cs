@@ -9,7 +9,7 @@ namespace ConsoleApp1
     class Program
     {
         static void Main(string[] args)
-        {
+        {asdasdasdasdasdasd
             while(true)
             {
                 Console.WriteLine("Deneme sayisini gir: ");
