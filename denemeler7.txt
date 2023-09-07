@@ -1,4 +1,26 @@
+namespace FWRuleDeciderTestConsole
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var _assembly = Assembly.GetExecutingAssembly();
+            var _stream = _assembly.GetManifestResourceStream("FWRuleDeciderTestConsole.EmbeddedResourceTest.txt");
+            string[] allResources = GetEmbeddedResourceNames();
+            
+            int a = 5;
 
+        }
+        public static Stream GetEmbeddedResourceStream(string resourceName)
+        {
+            return Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName);
+        }
+        public static string[] GetEmbeddedResourceNames()
+        {
+            return System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames();
+        }
+    }
+}
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam libero odio, lobortis et ex quis, placerat convallis nisi. Nullam lobortis, nulla venenatis hendrerit gravida, dolor leo consectetur lacus, eu dictum urna neque tincidunt diam.asdasd Vestibulum sagittis efficitur eros, in interdum lorem interdum nec. Praesent pulvinar massa nec mauris rutrum pharetra. Nam congue dui ut est porttitor, at mollis augue luctus. Donec in felis quis mauris semper pretium. Aenean arcu lacus, fringilla non tortor a, efficitur gravida diam. Fusce consequat enim magna, consequat consectetur ligula pharetra vitae. Aenean at velit vel mauris tincidunt egestas. Pellentesque tempor elit mi, quis euismod velit consectetur scelerisque. Quisque ac semper enim.
